@@ -1,8 +1,5 @@
 # Tiltfile
 
-# Specify the name of your project
-#name("PHP-Tilt-project")
-
 # Define the local and remote Kubernetes context your-cluster-context depend on what you have as vcluster (in our case it is docs-vcluster2)
 # make sure to choose the right Vcluster where you want to apply your tilt file
 
