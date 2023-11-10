@@ -14,22 +14,22 @@ Therefore dev team dose not need to push the code every time and the deployment 
 ![Alt Text](https://github.com/jkhazri/OC-demo-Tilt/blob/main/src/tild-magic.png)
 
 1. Install tilt with:
-```
+```bash
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
 ```
 2. Run Tilt: Open a terminal in the same directory as your Tiltfile and the PHP project and run the following command:
-```
+```bash
 git clone https://github.com/jkhazri/OC-demo-Tilt.git
 cd OC-demo-Tilt
 tilt up
 ```
 3. The tilt file will run the code and deploy the config into the k8s cluster :
-```
+```bash
 Loading Tiltfile at: OC-demo-Tilt/Tiltfile
 Successfully loaded Tiltfile (10.510393ms)
 ```
 4. check the k8s cluster and you will get your pods in return:
-```
+```bash
 kubectl get deployment
 
 NAME                 READY   UP-TO-DATE   AVAILABLE   AGE
