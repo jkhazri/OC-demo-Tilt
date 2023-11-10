@@ -1,4 +1,18 @@
 # onecloud Tilt demo
+Intro :
+In normal situation dev team write his code and then it push it to the git repo (or any other repo) after that the pipeline is triggered to deploy this code in the K8s cluster as shown in this screen.
+![Alt Text](https://github.com/jkhazri/OC-demo-Tilt/blob/main/src/deployment01.png)
+
+Now let suppose the dev team want to test something quickly after changing the code ? ,This mean that they need to go throw the same steps over and over again.
+
+Lets suppose that they have hundreds of changes every day and they don't want to commit them every time to check if the code was well deployed or not ?
+
+Well here come the magic of Tilt. 
+Tilt automates all the steps from a code change to a new process: watching files, building container images, and bringing your environment up-to-date. 
+Therefore dev team dose not need to push the code every time and the deployment to the k8s cluster is done instantly and the pods are up to date immediately.
+
+![Alt Text](https://github.com/jkhazri/OC-demo-Tilt/blob/main/src/tild-magic.png)
+
 1. Install tilt with:
 ```
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
