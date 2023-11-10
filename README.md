@@ -16,6 +16,11 @@ Successfully loaded Tiltfile (10.510393ms)
 ```
 4. check the k8s cluster and you will get your pods in return:
 ```
+kubectl get deployment
+
+NAME                 READY   UP-TO-DATE   AVAILABLE   AGE
+php-app-deployment   3/3     3            3           39m
+
 kubectl get pods
 
 NAME                                  READY   STATUS    RESTARTS   AGE
