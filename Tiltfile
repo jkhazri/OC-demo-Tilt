@@ -15,7 +15,7 @@ k8s_yaml("service-PHP-demo.yaml")
 k8s_yaml("PHP-ingress-file.yaml")
 
 # Add watches for file changes to trigger automatic updates
-watch_file("app.js")
-watch_file("index.php")
-watch_file("style.css")
+watch_file("./src/app.js")
+watch_file("./src/index.php")
+watch_file("./src/style.css")
 
