@@ -1,5 +1,5 @@
-# onecloud Tilt demo
-Intro :
+# OneCloud Tilt demo
+# Introduction :
 In normal situation dev team write his code and then it push it to the git repo (or any other repo) after that the pipeline is triggered to deploy this code in the K8s cluster as shown in this screen.
 ![Alt Text](https://github.com/jkhazri/OC-demo-Tilt/blob/main/src/deployment01.png)
 
